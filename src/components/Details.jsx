@@ -7,15 +7,15 @@ import Card from './Card';
 const Details = () => {
   return (
     <div id="team" className="max-w-[1200px] pb-36  mx-auto">
-      <div className="grid grid-cols-2 -mt-52">
+      <div className="md:grid flex flex-col md:grid-cols-2 -mt-52">
         <div></div>
-        <div className=" z-40 grid  place-items-end  ">
+        <div className=" z-40 grid place-items-center md:place-items-end  ">
           <Card heading1={'Designing'} heading2={'Lifestyle'} />
         </div>
       </div>
 
-      <div className="flex mt-20 gap-16">
-        <img src={img1} alt="/" />
+      <div className="flex md:flex-row flex-col px-5 md:px-0 mt-20 gap-16">
+        <img className="" src={img1} alt="/" />
         <div className="flex flex-col gap-10 pt-20">
           <h1 className="text-3xl font-bold">
             Designing Beautiful, Eco-friendly and Green Structures Around the
@@ -40,7 +40,7 @@ const Details = () => {
         </div>
       </div>
 
-      <div className="flex mt-52 gap-16">
+      <div className="flex md:flex-row flex-col mt-52 gap-16">
         <div className=" flex w-full ">
           <div className="w-[70%] flex flex-col gap-10 justify-center mx-auto">
             <h1 className="text-3xl font-bold">
@@ -56,7 +56,7 @@ const Details = () => {
             </p>
           </div>
         </div>
-        <img src={img2} alt="/" />
+        <img className="px-5 md:px-0" src={img2} alt="/" />
       </div>
     </div>
   );

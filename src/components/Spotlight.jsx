@@ -10,7 +10,7 @@ const Spotlight = () => {
         <h1 className="mx-auto text-3xl font-bold ">Construction Spotlight</h1>
         <div className="border  border-[#57AA6E] w-52"></div>
       </div>
-      <div className="grid grid-cols-3 gap-20 place-items-center pt-28">
+      <div className="md:grid flex flex-col md:grid-cols-3 gap-20 place-items-center pt-28">
         <div>
           <SpotCard
             image={logo1}

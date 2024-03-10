@@ -1,8 +1,10 @@
+import { RiArrowRightSLine } from 'react-icons/ri';
+
 const ContactForm = () => {
   return (
     <div
       id="contact"
-      className="max-w-[1200px] mx-auto pt-28 gap-8 grid grid-cols-2"
+      className="max-w-[1200px] mx-auto pt-28 flex gap-16  flex-col md:gap-8 md:grid grid-cols-2"
     >
       <div className="w-[70%] mx-auto flex flex-col gap-10">
         <h1 className=" text-left text-3xl font-semibold ">
@@ -18,7 +20,7 @@ const ContactForm = () => {
         </p>
       </div>
       <div>
-        <form className=" flex flex-col gap-5" action="">
+        <form className=" flex flex-col px-5 md:px-0 gap-5" action="">
           <div className="flex flex-col gap-3">
             <label htmlFor="name">Enter Name *</label>
             <input
@@ -49,6 +51,13 @@ const ContactForm = () => {
               cols="10"
               rows="5"
             ></textarea>
+            <a
+              href="mailto:info.gracedecore.com"
+              className="px-5 flex items-center gap-3 justify-center w-[200px] text-white  mx-auto py-3 rounded-lg bg-[#57AA6E] transition-all hover:bg-[#3A3A3A]"
+            >
+              Send Email
+              <RiArrowRightSLine size={25} />
+            </a>
           </div>
         </form>
       </div>

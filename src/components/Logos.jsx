@@ -5,7 +5,7 @@ import logo3 from '../assets/logo-3.svg';
 const Logos = () => {
   return (
     <div className="max-w-[1200px] mx-auto">
-      <div className="flex justify-between items-center">
+      <div className="flex md:flex-row flex-col justify-between items-center">
         <h1 className="text-xl font-bold">Launched Projects:</h1>
         <img className="max-w-[120px] " src={logo1} alt="/" />
         <img className="max-w-[120px] " src={logo2} alt="/" />

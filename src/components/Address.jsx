@@ -1,7 +1,7 @@
 const Address = () => {
   return (
     <div className="max-w-[1200px] mx-auto mt-28">
-      <div className="grid gap-12 grid-cols-3">
+      <div className="md:grid flex flex-col gap-12 ml-12 md:ml-0 md:grid-cols-3">
         <div className="flex flex-col gap-8">
           <h2 className="text-xl font-medium">Our Office</h2>
           <h1 className="text-2xl font-bold">G-334 PREET VIHAR DELHI</h1>

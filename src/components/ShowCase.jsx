@@ -6,7 +6,7 @@ const ShowCase = () => {
   return (
     <div
       id="project"
-      className="max-w-[1200px] mx-auto mt-28 grid grid-cols-4 h-auto"
+      className="max-w-[1200px] mx-auto mt-28 grid grid-cols-2 md:grid-cols-4 h-auto"
     >
       <div className="bg-[#333333] flex flex-col  justify-center items-center absolute h-full relative">
         <div className=" flex flex-col gap-9 px-6 pt-12 ">

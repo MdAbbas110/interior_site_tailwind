@@ -3,11 +3,11 @@ import { FaPhoneSquare } from 'react-icons/fa';
 const Background = () => {
   return (
     <div className="full_bg  w-full mb-32 ">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-2 ">
+      <div className="max-w-[1200px] mx-auto flex flex-col md:grid md:grid-cols-2 ">
         <div className="mx-auto">
           <Card heading1={'Excellent City'} heading2={'Location'} />
         </div>
-        <div className="pt-20">
+        <div className="pt-20 ml-12 md:ml-0">
           <div className="w-[100%] flex flex-col gap-3  justify-center mx-auto ">
             <FaPhoneSquare color="white" size={30} />
             <h1 className="text-2xl font-bold text-white">

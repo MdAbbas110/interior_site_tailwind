@@ -14,7 +14,7 @@ const Hero = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 mt-8 ">
+          <div className="md:grid gap-7 md:gap-0 flex flex-col md:grid-cols-2 mt-8 ">
             <div>
               <img src={logo} alt="/" />
             </div>
@@ -37,12 +37,14 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className=" text-white pt-60">
-            <h1 className="text-[5rem] tracking-tight font-bold">
-              Urban Living.
+          <div className=" text-white px-5 md:px-0 pt-52">
+            <h1 className="md:text-[5rem] text-[3rem] tracking-tight font-bold">
+              Grace Decor Interior
             </h1>
-            <h1 className="text-[5rem] leading-[80px] font-bold">Redefined.</h1>
-            <p className="mt-16 text-wrap w-[600px]">
+            <h1 className="md:text-[5rem] text-[3rem] leading-[80px] font-bold">
+              Construction.
+            </h1>
+            <p className="mt-16 text-wrap w-[300px] md:w-[600px]">
               – Ullam, tenetur aliqua nibh pretium potenti habitantelit irure
               quas eligendi, tempore torquent lectus dolore!
             </p>
