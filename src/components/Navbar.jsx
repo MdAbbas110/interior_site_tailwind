@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/gd-transparent.png';
 import { FaPhoneSquare } from 'react-icons/fa';
 
@@ -23,21 +24,21 @@ const Navbar = () => {
           </a>
         </div>
         <div className="flex px-6 min-h-[70px] border uppercase border-[#ff7a3d] items-center justify-between text-white font-medium text-base bg-black opacity-[0.7]">
-          <a className="hover:text-[#ff7a3d]  " href="/">
+          <Link to={'/'} className="hover:text-[#ff7a3d]  ">
             Home
-          </a>
-          <a className="hover:text-[#ff7a3d] " href="/about">
+          </Link>
+          <Link to={'/about'} className="hover:text-[#ff7a3d] ">
             About Us
-          </a>
-          <a className="hover:text-[#ff7a3d] " href="/team">
+          </Link>
+          <Link to={'/team'} className="hover:text-[#ff7a3d] ">
             Team
-          </a>
-          <a className="hover:text-[#ff7a3d] " href="/project">
+          </Link>
+          <Link to={'/project'} className="hover:text-[#ff7a3d] ">
             Project
-          </a>
-          <a className="hover:text-[#ff7a3d] " href="/contact">
+          </Link>
+          <Link to={'/contact'} className="hover:text-[#ff7a3d] ">
             Contact US
-          </a>
+          </Link>
         </div>
       </div>
     </div>
