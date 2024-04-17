@@ -1,6 +1,6 @@
 import Card from './Card';
 import { FaPhoneSquare } from 'react-icons/fa';
-const Background = () => {
+const Enquiry = () => {
   return (
     <div className="full_bg  w-full mb-32 ">
       <div className="max-w-[1200px] mx-auto flex flex-col md:grid md:grid-cols-2 ">
@@ -13,12 +13,11 @@ const Background = () => {
             <h1 className="text-2xl font-bold text-white">
               For Further Inquiries Call
             </h1>
-            <h1 className=" text-[#74F7EA] pb-5 pt-3 text-6xl tracking-widest font-extrabold">
-              +91-9599277565
+            <h1 className=" text-[#f6f7f8] pb-5 pt-3 text-4xl tracking-widest font-extrabold">
+            <a href="tel:+919599277565">+91-9599277565</a>
             </h1>
             <p className="text-lg font-normal text-white">
-              Ornare explicabo, molestias numquam porta! Netus molestiae! Quidem
-              dictum cillum. Error tempore etiam, consectetuer fusce.
+            Get in touch today to start your journey towards an elegantly designed, sustainable space
             </p>
           </div>
         </div>
@@ -27,4 +26,4 @@ const Background = () => {
   );
 };
 
-export default Background;
+export default Enquiry;

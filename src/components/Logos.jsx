@@ -1,6 +1,6 @@
-import logo1 from '../assets/logo-1.svg';
-import logo2 from '../assets/logo-2.svg';
-import logo3 from '../assets/logo-3.svg';
+import logo1 from '../assets/gd-logo1.png';
+import logo2 from '../assets/gd-logo1.png';
+import logo3 from '../assets/gd-logo1.png';
 
 const Logos = () => {
   return (

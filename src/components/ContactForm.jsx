@@ -1,6 +1,30 @@
 import { RiArrowRightSLine } from 'react-icons/ri';
 
+
+function getContactFormDetails() {
+
+}
+
 const ContactForm = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('msg').value.trim();
+
+    if (!name || !email || !message) {
+      alert('Please fill in all the fields.');
+      return;
+    }
+
+    const emailContent = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+    const mailtoUrl = `mailto:samyakjain112@gmail.com?subject=Enquiry from Grace Decor&body=${encodeURIComponent(emailContent)}`;
+
+    window.location.href = mailtoUrl;
+  };
+
   return (
     <div
       id="contact"
@@ -13,14 +37,14 @@ const ContactForm = () => {
         <h1 className=" tracking-widest text-left text-4xl font-bold ">
           We Offer Practical Solution to All Your Space Problems.
         </h1>
-        <p>⭐⭐⭐⭐⭐</p>
+        {/* <p>⭐⭐⭐⭐⭐</p>
         <p className=" text-left text-gray-700 text-xl font-medium ">
           Click edit button to change this text. Lorem ipsum dolor sit amet,
           consectetur adipiscing elit.tel. Ab accusamus dui nostrum nunc.
-        </p>
+        </p> */}
       </div>
       <div>
-        <form className=" flex flex-col px-5 md:px-0 gap-5" action="">
+        <form className=" flex flex-col px-5 md:px-0 gap-5" action="" name='contactFrom' onSubmit={handleSubmit}>
           <div className="flex flex-col gap-3">
             <label htmlFor="name">Enter Name *</label>
             <input
@@ -47,17 +71,17 @@ const ContactForm = () => {
               placeholder="Enquiry Details"
               className="border border-gray-200 outline-none p-4 bg-[#FAFAFA]"
               name=""
-              id=""
+              id="msg"
               cols="10"
               rows="5"
             ></textarea>
-            <a
-              href="mailto:info.gracedecore.com"
-              className="px-5 flex items-center gap-3 justify-center w-[200px] text-white  mx-auto py-3 rounded-lg bg-[#57AA6E] transition-all hover:bg-[#3A3A3A]"
+            <button
+              type="submit"
+              className="px-5 flex items-center gap-3 justify-center w-[200px] text-white  mx-auto py-3 rounded-lg bg-[#ff7a3d] transition-all hover:bg-[#3A3A3A]"
             >
               Send Email
               <RiArrowRightSLine size={25} />
-            </a>
+            </button>
           </div>
         </form>
       </div>
